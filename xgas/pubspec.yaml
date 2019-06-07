@@ -22,6 +22,14 @@ dependencies:
 
 
   cupertino_icons: ^0.1.2
+  scoped_model: ^1.0.1
+  http: ^0.12.0+1
+  font_awesome_flutter: ^8.2.0
+  rxdart: ^0.20.0
+  flutter_rating: ^0.0.2
+  flutter_launcher_icons: ^0.7.0
+  url_launcher: ^4.0.3
+  
 
 dev_dependencies:
   flutter_test:
@@ -43,6 +51,19 @@ flutter:
   assets:
     - assets/img/airtel_money.png
     - assets/img/alpha.png
+    - assets/img/back_red.png
+    - assets/img/back.png
+    - assets/img/camel.png
+    - assets/img/ezypesa.png
+    - assets/img/gas_master.png
+    - assets/img/GAS.png
+    - assets/img/lake.png
+    - assets/img/location.png
+    - assets/img/mihan.png
+    - assets/img/oilcom.png
+    - assets/img/oryx.png
+    - assets/img/pin.png
+    
 
   # An image asset can refer to one or more resolution-specific "variants", see
   # https://flutter.dev/assets-and-images/#resolution-aware.
@@ -56,11 +77,6 @@ flutter:
   # list giving the asset and other descriptors for the font. For
   # example:
   fonts:
-    - family: Schyler
-      fonts:
-        - asset: fonts/Schyler-Regular.ttf
-        - asset: fonts/Schyler-Italic.ttf
-          style: italic
     - family: Trajan-Pro
       fonts:
         - asset: assets/fonts/TrajanProRegular.ttf
