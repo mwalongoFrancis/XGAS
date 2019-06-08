@@ -1,8 +1,11 @@
 import 'package:flutter/material.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 import 'package:scoped_model/scoped_model.dart';
+import 'package:xgas/constants/constants.dart';
 import 'package:xgas/scoped-model/main.dart';
 import 'package:xgas/styles/custom_theme.dart' as theme;
+
+
 
 class LoginScreen extends StatefulWidget {
   @override
@@ -27,10 +30,6 @@ class _LoginScreenState extends State<LoginScreen>
       builder: (BuildContext context, Widget child, MainModel model) {
         return Scaffold(
           backgroundColor: theme.Colors.xgasPrimaryColor,
-          appBar: AppBar(
-            elevation: 0.0,
-            backgroundColor: Colors.transparent,
-          ),
           body: SingleChildScrollView(
             child: Container(
               width: MediaQuery.of(context).size.width,
@@ -150,7 +149,8 @@ class _LoginScreenState extends State<LoginScreen>
                                         fontWeight: FontWeight.bold)),
                                 color: Colors.white,
                                 onPressed: () {
-                                 Navigator.pushReplacementNamed(context, '/home');
+                                  Navigator.pushReplacementNamed(
+                                      context, homeScreen);
                                 },
                               ),
                             )
@@ -159,12 +159,15 @@ class _LoginScreenState extends State<LoginScreen>
                         padding: EdgeInsets.only(
                             left: _screenPadding, right: _screenPadding),
                       ),
-                       FlatButton(
+                      FlatButton(
                         child: Text(
                           "Don't have account? SignUp!",
                           style: TextStyle(color: Colors.white),
                         ),
-                        onPressed: () {},
+                        onPressed: () {
+                          Navigator.pushReplacementNamed(
+                              context, registerScreen);
+                        },
                       ),
                     ]),
                   )

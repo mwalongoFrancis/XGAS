@@ -1,9 +1,10 @@
 import 'package:flutter/material.dart';
 import 'package:scoped_model/scoped_model.dart';
+import 'package:xgas/constants/constants.dart';
 import 'package:xgas/scoped-model/main.dart';
 import 'package:xgas/styles/custom_theme.dart' as theme;
 
-import 'login_screen.dart';
+
 
 class LandingScreen extends StatefulWidget {
   @override
@@ -60,11 +61,7 @@ class _LandingScreenState extends State<LandingScreen> {
                                     fontWeight: FontWeight.bold)),
                             color: Colors.white,
                             onPressed: () {
-                              Navigator.push(
-                                  context,
-                                  MaterialPageRoute(
-                                      builder: (BuildContext context) =>
-                                          LoginScreen()));
+                              Navigator.pushReplacementNamed(context, loginScreen);
                             },
                           ),
                         )
@@ -89,7 +86,9 @@ class _LandingScreenState extends State<LandingScreen> {
                                     color: Colors.red,
                                     fontWeight: FontWeight.bold)),
                             color: Colors.black,
-                            onPressed: () {},
+                            onPressed: () {
+                                  Navigator.pushReplacementNamed(context, registerScreen);
+                            },
                           ),
                         )
                       ],
