@@ -26,6 +26,15 @@ dependencies:
   # The following adds the Cupertino Icons font to your application.
   # Use with the CupertinoIcons class for iOS style icons.
   cupertino_icons: ^0.1.2
+  scoped_model: ^1.0.1
+  http: ^0.12.0+1
+  font_awesome_flutter: ^8.2.0
+  rxdart: ^0.20.0
+  flutter_rating: ^0.0.2
+  flutter_launcher_icons: ^0.7.0
+  url_launcher: ^4.0.3
+
+  
 
 dev_dependencies:
   flutter_test:
@@ -45,9 +54,27 @@ flutter:
 
   # To add assets to your application, add an assets section, like this:
   assets:
+<<<<<<< HEAD:pt_project_1/pubspec.yaml
     
     - assets/icons/diamond.png
 
+=======
+    - assets/img/airtel_money.png
+    - assets/img/alpha.png
+    - assets/img/back_red.png
+    - assets/img/back.png
+    - assets/img/camel.png
+    - assets/img/ezypesa.png
+    - assets/img/gas_master.png
+    - assets/img/GAS.png
+    - assets/img/lake.png
+    - assets/img/location.png
+    - assets/img/mihan.png
+    - assets/img/oilcom.png
+    - assets/img/oryx.png
+    - assets/img/pin.png
+    
+>>>>>>> c5fb52c75f2e57ec7d9fb876a180876dcd171830:xgas/pubspec.yaml
 
   # An image asset can refer to one or more resolution-specific "variants", see
   # https://flutter.dev/assets-and-images/#resolution-aware.
@@ -60,6 +87,7 @@ flutter:
   # "family" key with the font family name, and a "fonts" key with a
   # list giving the asset and other descriptors for the font. For
   # example:
+<<<<<<< HEAD:pt_project_1/pubspec.yaml
   # fonts:
   #   - family: Schyler
   #     fonts:
@@ -72,5 +100,13 @@ flutter:
   #       - asset: fonts/TrajanPro_Bold.ttf
   #         weight: 700
   #
+=======
+  fonts:
+    - family: Trajan-Pro
+      fonts:
+        - asset: assets/fonts/TrajanProRegular.ttf
+          weight: 700
+  
+>>>>>>> c5fb52c75f2e57ec7d9fb876a180876dcd171830:xgas/pubspec.yaml
   # For details regarding fonts from package dependencies,
   # see https://flutter.dev/custom-fonts/#from-packages
