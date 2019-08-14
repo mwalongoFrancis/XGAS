@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:pt_project_1/constants/constants.dart';
+import 'package:pt_project_1/views/pages/home_page.dart';
 import 'package:pt_project_1/views/pages/login_page.dart';
 
 class App extends StatelessWidget {
@@ -9,9 +10,10 @@ class App extends StatelessWidget {
       debugShowCheckedModeBanner: false,
       title: 'Flutter Demo',
       theme: ThemeData(primarySwatch: Colors.purple),
-      home: LoginPage(),
+      home: HomePage(),
       routes: {
-loginPage : (BuildContext context) => LoginPage(),
+        loginPage: (BuildContext context) => LoginPage(),
+        homePage: (BuildContext context) => HomePage(),
       },
     );
   }

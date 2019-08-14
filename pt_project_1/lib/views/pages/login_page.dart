@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:pt_project_1/views/pages/login_screen.dart';
+import 'package:pt_project_1/views/pages/sign_up_page.dart';
+
 
 class LoginPage extends StatelessWidget {
   @override
@@ -53,7 +55,9 @@ class LoginPage extends StatelessWidget {
                   'SIGN UP',
                   style: TextStyle(color: Colors.white),
                 ),
-                onPressed: () {},
+                onPressed: () {
+                  Navigator.push(context, MaterialPageRoute(builder: (context)=>SignUpPage()));
+                },
               ),
             ],
           ),
